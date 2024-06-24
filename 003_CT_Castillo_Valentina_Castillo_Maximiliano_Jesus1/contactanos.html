@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactanos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Nuevas Alas</h1> 
+                <button type="button" class="abrir_menu"><img src="images/logo_menu_hamburguesa.png" alt="Logo menu hamburguesa"></button>
+                <nav class="barra_navegacion">
+                    <button type="button" class="cerrar_menu"><img src="images/logo_cerrar_menu.png" alt="Logo cerrar menu"></button>
+                    <ul>
+                        <li> <a href="index.html"> Inicio</a></li>
+                        <li><a href="turismo.html">turismo</a></li>
+                        <li><a href="contactanos.html">contactanos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <form id="formulario_captcha">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido" required>    
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" min="18" placeholder="Ingrese su edad" required>
+                <label for="mail">Mail:</label>
+                <input type="email" name="mail" placeholder="Ingrese su mail" required>           
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" placeholder="Ingrese su teléfono" required>            
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" name="nacionalidad" placeholder="Ingrese su nacionalidad" required>            
+                <label for="personas">Cantidad de personas:</label>
+                <input type="number" name="personas" placeholder="Ingrese cantidad de viajantes" min="1" required>
+                <label for="destino">Seleccione un destino:</label>
+                <select>
+                    <option value="fiordos">Fiordos noruegos, Islas Lofoten y sol de medianoche</option>
+                    <option value="oslo">Oslo</option>
+                    <option value="tromso">Tromso</option>
+                    <option value="trondheim">Trondheim</option>
+                    <option value="montañas">Fiordos, Lagos, Montañas y Cabo Norte</option>
+                </select>           
+                <label for="comentario">Deje su comentario:</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su opinión"></textarea>
+                <p class="texto_captcha">Ingrese el siguiente captcha:<span id="textCaptcha"></span></p>
+                <input type="text" name="captcha" id="ingresado">
+                <button id="boton_enviar_form_captcha">Enviar</button>
+                <h3 id="resultado"></h3>
+            </form>
+            <footer>
+                <ul>
+                    <li>Editor y editora: Castillo, Jesus y Castillo, Valentina</li>
+                    <li>Dia de realización: 28 de Abril del 2022</li>
+                    <li>Dirección: Av.San Martin 770</li>
+                    <li>Mail:NuevasAlas@gmail.com</li>
+                </ul>
+            </footer>
+        </main>
+        <script src="js/menu.js"></script>
+        <script src="js/captcha.js"></script>
+    </body>
+</html>

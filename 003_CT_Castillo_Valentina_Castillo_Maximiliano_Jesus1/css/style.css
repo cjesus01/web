@@ -1,0 +1,279 @@
+body, button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(147, 160, 244);
+}
+header, main{
+    display: flex;
+}
+main{
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    justify-content: space-between;
+    align-items: flex-start;  
+}
+.destinos,form,footer{
+    margin-top: auto;
+}
+h1{
+    font-size: 250%;
+}
+button img, h1, .barra_navegacion, .texto_captcha{
+    width: 100%;
+    margin: 0%;
+}
+button{
+    margin-top: 4%;
+    width: 7%;
+    border: none;
+}
+.cerrar_menu{
+    align-self: end;
+}
+.cerrar_menu, .barra_navegacion{
+    background-color:rgb(105, 114, 175) ;
+}
+.barra_navegacion{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+} 
+.barra_navegacion ul, footer ul{
+    list-style:none;  
+    padding: 0%;
+} 
+a, article,h1{
+    color:white;
+}
+a{
+    text-decoration: none;
+    font-size: 130%;
+}
+.barra_navegacion a{  
+    line-height: 9rem;
+    text-transform: uppercase;
+}    
+.barra_navegacion a:hover {
+    color: black;
+}
+.mostrar_nav{
+    display: flex;
+}
+article{
+    margin: 2%;
+} 
+   
+article p{
+    color: black;
+    text-align: justify;
+}
+.tamaño_imagen{
+    width: 100%;
+}
+footer, tr td{
+    padding: 0.3% 0%;
+    border: 0.125rem solid black;
+}
+footer ul{
+    padding: 1%;
+}
+.lugares_de_viaje{
+    text-align: start;
+}
+.lugares_de_viaje a:hover{
+    color: black;
+}
+.comienzo{
+    color: rgb(7, 20, 131);
+}
+h3{
+    font-size: 150%;
+}
+#contenedor_tabla{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    margin: 0% 1%;
+    border-collapse:collapse;
+}
+tr{
+    margin: 1%;
+}
+#tabla{
+    background-color: rgb(182, 189, 238);
+}
+thead,input,select,textarea{
+    background-color: rgb(211, 217, 255);
+}
+.resaltar{
+    background-color: yellow;
+}
+#oferta, #form_incompleto,#GuardarCambios,#IdVacia, .texto_auxiliar_p p{
+    font-size: 120%;
+}
+.resaltar_rojo{
+    color: rgb(255, 49, 49);
+}
+.boton_Modificar,.Opcionvacia{
+    display: none;
+}
+.Ver_boton_Eliminar,.Ver_boton_Modificar{
+    display: block;
+    width: 100%;
+    font-size: 120%;
+    border-radius: 2rem;
+}
+.celda_boton_tabla{
+    border: none;
+    background-color: rgb(147, 160, 244);
+}
+.barra_navegacion li,h1,article,form, thead, #oferta, #form_incompleto,#GuardarCambios,#IdVacia{
+    text-align: center;
+}
+label, .texto_captcha{
+    display: block;
+    font-size: 150%;
+}
+input,select,textarea{
+    text-indent: 1rem; 
+    width: 75%;
+    height: 2rem;
+    margin-bottom: 1%;
+    border-radius: 2rem; 
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#BotonModificar,#boton_enviar_form_captcha{
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton_enviar button,#boton_enviar_form_captcha,#BotonModificar{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 30%;
+    border-radius: 2rem;
+}
+.boton_enviar button,#boton_enviar_form_captcha, .Ver_boton_Eliminar,.Ver_boton_Modificar,#BotonModificar{
+    background-color:rgb(117 253 253);
+}
+#BotonModificar:hover{
+    background-color: white;
+}
+.boton_enviar button:hover{
+    background-color: white;
+}
+#boton_enviar_form_captcha:hover{
+    background-color: white;
+}
+.Ver_boton_Modificar:hover{
+    background-color: white;
+}
+.Ver_boton_Eliminar:hover{
+    background-color: white;
+}
+.Desplegar{
+    display: none;
+}
+.DesplegarDiv{
+    display: block;
+}
+@media only screen and (min-width: 330px) {
+    h1{
+        font-size: 350%;
+    }
+    #oferta, #form_incompleto,#GuardarCambios,#IdVacia, .texto_auxiliar_p{
+        font-size: 200%;
+    }
+} 
+@media only screen and (min-width: 750px) {
+    body{
+        font-size: xx-large;
+    }
+    .boton_enviar button,#BotonModificar,#boton_enviar_form_captcha{
+        font-size: 100%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    body{
+        font-size: inherit;
+    }
+    .barra_navegacion ul{
+        display: flex;
+    }
+    .destinos{
+        display: flex;
+        align-items: center;
+    }
+    button{
+        display: none;
+    }
+    header{
+        margin-left: 5%;
+        align-items: center;
+    }
+    h1{
+        width: auto;
+        text-align: start;
+        font-size: 350%;
+        margin-top: 0%;
+    }
+    .barra_navegacion{
+       background-color: rgb(117 253 253);
+       display: block;
+       position: relative;
+    }
+    .barra_navegacion ul,table{
+        margin:0%;
+    }
+    .barra_navegacion li, header {
+        width: 100%;
+        margin: 0%;
+    }
+    .barra_navegacion li {
+        padding: 2%;     
+    }
+    .barra_navegacion a{
+        line-height: 0%;
+        color: black;
+        text-transform: capitalize;
+    }
+    .barra_navegacion li:hover {
+        background-color: white;
+    }
+    aside{
+        width: 200%;
+        align-self: center;
+        padding: 0% 2%;
+    }
+    h2{
+        font-size: 200%;
+    }
+    footer ul{
+        padding: 0%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .imagenes{
+        width: 250%;
+        margin: 1%;
+        margin-bottom: 2%;
+    }
+    .boton_enviar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .boton_enviar button,#boton_enviar_form_captcha,#BotonModificar{
+        display: block;
+        font-size: 125%;
+        width: 20%;
+    }
+    .orden{
+        order: 1;
+    }
+}
